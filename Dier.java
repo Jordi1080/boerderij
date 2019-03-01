@@ -1,5 +1,5 @@
 package boerderij;
 
-public class Dier {
-
+abstract public class Dier {
+	abstract void geluidMaken();
 }
