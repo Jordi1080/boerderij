@@ -5,7 +5,11 @@ public class Fles {
 		int maxInhoud;
 		String soortInhoud;
 		boolean dop;
-		Fles(){
+		void flesVullen() {
 			
+		}
+		boolean dopErop(){
+			dop = true;
+			return dop;
 		}
 }
