@@ -23,5 +23,13 @@ public class Boerderij {
 		 geld = 1000;
 	}
 	
+	public void toonBoerderij(){
+		// toon dieren
+		System.out.println("Dit zijn de dieren:");
+		for (Dier d : dieren){
+			System.out.println(d.naam);
+		}
+	}
+	
 	
 }

@@ -8,7 +8,7 @@ public class BoerderijApp {
 		run();
 	}
 	
-	public void run(){
+	public static void run(){
 		Boerderij farmville = new Boerderij();
 	}
 
