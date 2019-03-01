@@ -11,6 +11,11 @@ public class Fles {
 		}
 		void flesVullen(int hoeveelheid) {
 			inhoud = hoeveelheid;
+			if (inhoud>10) {
+				System.out.println("Dat past niet. Er kan max 10L in een fles.");
+			}else {
+				System.out.println("Er zit " + inhoud + "L in de fles.");
+			}
 		}
 		boolean dopErop(){
 			dop = true;
