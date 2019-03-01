@@ -15,8 +15,14 @@ public class Schoonmaker {
 	 }//end schoonmaken
 	
 	void schoonmaken(Fles fles) {
+		if(fles.inhoud > 0) {
+			System.out.println("Ah lekker, er is zit nog melk in. Jam Jam");
+			fles.inhoud = 0;
+		}
+		else{
+			System.out.println("Zo, ff lekker deze " +fles + "schoonmaken.");
+		}
 		 schoneHanden = false;
-		 
 		 System.out.println("Dat is een schone" + fles);
 	 }//end schoonmaken
 	
