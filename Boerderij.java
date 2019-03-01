@@ -12,7 +12,9 @@ public class Boerderij {
 	public Boerderij(){
 		 dieren = new ArrayList<>();
 		 Koe bertha = new Koe("Bertha");
-		 Geit alfred = new Geit();
+		 Geit alfred = new Geit("Alfred");
+		 dieren.add(bertha);
+		 dieren.add(alfred);
 		 
 		 flessen = new ArrayList<>();
 		 boer = new Boer("Hans", 45);

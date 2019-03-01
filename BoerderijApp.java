@@ -7,5 +7,9 @@ public class BoerderijApp {
 		System.out.println("Dit is de applicatie");
 		run();
 	}
+	
+	public void run(){
+		Boerderij farmville = new Boerderij();
+	}
 
 }
