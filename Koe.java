@@ -18,4 +18,8 @@ public class Koe extends Dier implements Melkbaar{
 		}
 	}
 	
+	public int getHoeveelheidMelk() {
+		return hoeveelheidMelk;
+	}
+	
 }
