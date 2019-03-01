@@ -49,11 +49,11 @@ public class Boerderij {
 		
 		// dop op fles 0 doen
 		
-		boer.dopOpFlesDoen(melkmachine.getFlessen().get(0));
-		System.out.println("inhoud: " + melkmachine.getFlessen().get(0).inhoud);
+		//boer.dopOpFlesDoen(melkmachine.getFlessen().get(0));
+		//System.out.println("inhoud: " + melkmachine.getFlessen().get(0).inhoud);
 		
 		// schoonmaken
-		schoonmaker.schoonmaken(melkmachine.getFlessen().get(0));
+		//schoonmaker.schoonmaken(melkmachine.getFlessen().get(0));
 		
 		
 		
