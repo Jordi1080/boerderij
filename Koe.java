@@ -2,7 +2,6 @@ package boerderij;
 
 public class Koe extends Dier implements Melkbaar{
 	int hoeveelheidMelk = 200;
-	String naam;
 	void geluidMaken() {
 			System.out.println("Moeeeeeeeee");
 		}

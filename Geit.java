@@ -1,7 +1,6 @@
 package boerderij;
 
 public class Geit extends Dier implements Melkbaar{
-	String naam;
 	int hoeveelheidMelk = 50;
 	
 	Geit(String naam){

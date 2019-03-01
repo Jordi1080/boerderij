@@ -10,6 +10,7 @@ public class BoerderijApp {
 	
 	public static void run(){
 		Boerderij farmville = new Boerderij();
+		farmville.toonBoerderij();
 	}
 
 }
