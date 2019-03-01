@@ -5,7 +5,9 @@ public class Schoonmaker {
 	String naam;
 	int salaris;
 	
-	
+	Schoonmaker(String naam){
+		this.naam = naam;
+	}
 	
 	void schoonmaken() {
 		 schoneHanden = false;
