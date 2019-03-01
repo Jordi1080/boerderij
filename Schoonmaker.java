@@ -16,7 +16,8 @@ public class Schoonmaker {
 	
 	void schoonmaken(Fles fles) {
 		 schoneHanden = false;
-		 System.out.println("Dat is een schone fles.");
+		 
+		 System.out.println("Dat is een schone" + fles);
 	 }//end schoonmaken
 	
 	void biertjeDrinken() {
