@@ -10,7 +10,7 @@ public class Boerderij {
 	public Boerderij(){
 		 dieren = new ArrayList<>();
 		 flessen = new ArrayList<>();
-		 boer = new Boer();
+		 boer = new Boer("Hans", 45);
 		 geld = 1000;
 	}
 	
