@@ -3,7 +3,7 @@ package boerderij;
 public class Schoonmaker {
 	boolean schoneHanden = true;
 	String naam;
-	
+	int salaris;
 	
 	
 	 void schoonmaken() {
