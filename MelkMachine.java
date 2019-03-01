@@ -18,9 +18,23 @@ public class MelkMachine {
 		}
 		if(dier instanceof Melkbaar) {
 			Melkbaar melkbaar = (Melkbaar) dier;
-				int opvragen = Math.min(huidigefles.maxInhoud-huidigefles.inhoud,melkbaar.getHoeveelheidMelk())
+				int opvragen = Math.min(huidigefles.maxInhoud-huidigefles.inhoud,melkbaar.getHoeveelheidMelk());
 				melkbaar.gemolkenWorden(opvragen);	
 				huidigefles.flesVullen(opvragen);
+				System.out.println(opvragen);
 		}
 	}
+	
+	public List<Fles> getFlessen() {
+		return this.flessen;
+	}
+	
+	public Fles getFles() {
+		return this.huidigefles;
+	}
+	
+	public void addFles(Fles fles){
+		
+	}
+	
 }

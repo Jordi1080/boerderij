@@ -23,7 +23,7 @@ public class Schoonmaker {
 			System.out.println("Zo, ff lekker deze " +fles.soortInhoud + "fles schoonmaken.");
 		}
 		 schoneHanden = false;
-		 System.out.println("Dat is een schone" + fles);
+		 System.out.println("Dat is een schone " + fles.soortInhoud + "fles");
 	 }//end schoonmaken
 	
 	void biertjeDrinken() {

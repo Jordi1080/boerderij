@@ -7,5 +7,10 @@ public class BoerderijApp {
 		System.out.println("Dit is de applicatie");
 		run();
 	}
+	
+	public static void run(){
+		Boerderij farmville = new Boerderij();
+		farmville.toonBoerderij();
+	}
 
 }
