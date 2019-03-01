@@ -19,4 +19,8 @@ public class Geit extends Dier implements Melkbaar{
 			System.out.println("Er is " + m + " geitenmelk uit geit " + naam + " gehaald. Er is nog " + hoeveelheidMelk + " over.");
 		}
 	}
+	
+	public int getHoeveelheidMelk() {
+		return hoeveelheidMelk;
+	}
 }
