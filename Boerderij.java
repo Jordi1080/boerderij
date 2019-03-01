@@ -3,7 +3,6 @@ import java.util.ArrayList;
 
 public class Boerderij {
 	ArrayList<Dier> dieren;// = new ArrayList<>();
-	ArrayList<Fles> flessen;// = new ArrayList<>();
 	Boer boer;
 	Schoonmaker schoonmaker;
 	MelkMachine melkmachine;
@@ -16,16 +15,17 @@ public class Boerderij {
 		 dieren.add(bertha);
 		 dieren.add(alfred);
 		 
-		 flessen = new ArrayList<>();
+		 melkmachine = new MelkMachine();
+		 //flessen = new ArrayList<>();
 		 koopFlessen(10, geld);
 		 
 		 
-		 boer = new Boer("Hans", 45);
-		 schoonmaker = new Schoonmaker();
-		 schoonmaker.naam = "Mickey Mouse";
+		 geld = 1000;
+		 boer = new Boer("Hans", 45, geld);
+		 schoonmaker = new Schoonmaker("Mickey Mouse");
 		 
 		 melkmachine = new MelkMachine();
-		 geld = 1000;
+		 
 	}
 	
 	public void toonBoerderij(){
@@ -42,13 +42,29 @@ public class Boerderij {
 		}
 		System.out.println("");
 		
-		// 
+		// we gaan dieren melken
+		for (Dier d : dieren){
+			melkmachine.melken(d);
+		}
+		
+		// dop op fles 0 doen
+		
+		boer.dopOpFlesDoen(melkmachine.getFlessen().get(0));
+		System.out.println("inhoud: " + melkmachine.getFlessen().get(0).inhoud);
+		
+		// schoonmaken
+		schoonmaker.schoonmaken(melkmachine.getFlessen().get(0));
+		
+		
+		
 	}
 	
 	public void koopFlessen(int aantal, int geld){
 		
 		for (int i = 0; i < aantal; i++){
-			flessen.add(new Fles("Melk"));
+			// melkmachine.getFlessen().add(new Fles("Melk"));
+			melkmachine.addFles(new Fles("Melk"));
+			geld -= 20;
 		}
 	}
 	

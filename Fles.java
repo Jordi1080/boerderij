@@ -6,7 +6,7 @@ public class Fles {
 		String soortInhoud;
 		boolean dop;
 		Fles(String a){
-			maxInhoud = 10;
+			maxInhoud = 250;// 10
 			soortInhoud = a;
 		}
 		void flesVullen(int hoeveelheid) {

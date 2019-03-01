@@ -22,7 +22,7 @@ public class Boer {
 	}
 
 	void dopOpFlesDoen(Fles fles) {
-		fles = new Fles();
+		fles = new Fles("Melk");
 		fles.dop = false;
 		if (fles.inhoud == fles.maxInhoud) {
 			System.out.println("De fles is vol en ik draai de dop er op");

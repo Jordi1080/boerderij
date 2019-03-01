@@ -9,15 +9,16 @@ public class Koe extends Dier implements Melkbaar{
 		this.naam = naam;
 	}
 	public void gemolkenWorden(int m) {
-		if(hoeveelheidMelk < 0) {
+		if(hoeveelheidMelk <= 0) {
 			System.out.println("Je kan een lege koe niet melken");
 		}else {
-			hoeveelheidMelk =- m;
-			System.out.println("Er is " + m + " geitenmelk uit koe " + naam + " gehaald. Er is nog " + hoeveelheidMelk + " over.");
+			hoeveelheidMelk -= m;
+			System.out.println("Er is " + m + " koeienmelk uit koe " + naam + " gehaald. Er is nog " + hoeveelheidMelk + " over.");
 		}
 	}
 	
 	public int getHoeveelheidMelk() {
+		//System.out.println(hoeveelheidMelk);
 		return hoeveelheidMelk;
 	}
 	
