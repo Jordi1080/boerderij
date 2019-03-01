@@ -2,9 +2,13 @@ package boerderij;
 
 public class Schoonmaker {
 	boolean schoneHanden = true;
+	String naam;
+	
+	
 	
 	 void schoonmaken() {
-		 System.out.println("");
+		 schoneHanden = false;
+		 System.out.println("Dat is lekker schoon");
 	 }
 	
 
