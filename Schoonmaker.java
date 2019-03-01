@@ -6,10 +6,20 @@ public class Schoonmaker {
 	int salaris;
 	
 	
-	 void schoonmaken() {
+	
+	void schoonmaken() {
 		 schoneHanden = false;
-		 System.out.println("Dat is lekker schoon");
-	 }
+		 System.out.println("Dat is lekker schoon, maar mijn handen zijn vies");
+	 }//end schoonmaken
+	
+	void schoonmaken(Fles fles) {
+		 schoneHanden = false;
+		 System.out.println("Dat is een schone fles.");
+	 }//end schoonmaken
+	
+	void biertjeDrinken() {
+		System.out.println("Burp!");
+	}//end biertjeDrinken
 	
 
 }
